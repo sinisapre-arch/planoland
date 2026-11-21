@@ -28,7 +28,7 @@ export default function Services() {
   const working = service("Рабочая документация");
   const visualization = service("3D-визуализация к проекту");
   const supervision = service("Авторский надзор");
-  const works = service("Организация работ");
+  const works = service("Ведение проекта");
   const care = service("Уход");
 
   /** One service card: title, price, body, optional details behind a disclosure. */
@@ -220,8 +220,8 @@ export default function Services() {
             </h4>
             <p className="mt-4 text-sm leading-relaxed text-graphite/70">
               {isRu
-                ? "Цены за сотку (100 м²) указаны для участков до 10 соток с исходными данными, достаточными для проектирования. Минимальная стоимость покрывает объём работы даже на небольшом участке. Пакеты «Концептуальный проект» и «Рабочая документация» — альтернативные итоговые цены, они не складываются. В цену рабочей документации входит дизайн сада и покрытий, но не отдельные инженерные системы. GNSS-обмер, дренаж и ливнёвка (от 12 000 ₽), освещение, автополив, ведомости объёмов/материалов и 3D-визуализация рассчитываются отдельно. Итоговый состав и цена фиксируются после брифа."
-                : "Per-sotka (100 m²) rates apply to sites up to 10 sotkas with suitable base information. The minimum fee reflects the design effort even for a small plot. The Concept Design and Detailed Working Design prices are alternative package totals; they are not added together. The working-design price covers the garden and hardscape design, not separate engineering systems. GNSS site measurement, drainage and stormwater (from ₽12,000), lighting, irrigation, material/quantity schedules and 3D visualization are priced separately. The final scope and price are confirmed after a brief."}
+                ? "Цены за сотку (100 м²) указаны для участков до 10 соток с исходными данными, достаточными для проектирования. Минимальная стоимость покрывает объём работы даже на небольшом участке. Пакеты «Концептуальный проект» и «Рабочая документация» — альтернативные итоговые цены, они не складываются: концептуальный проект даёт решение по планировке, рабочая документация — то же решение с размерами, отметками и материалами, по которому можно строить. GNSS-обмер, дренаж и ливнёвка (от 12 000 ₽), освещение, автополив, ведомости объёмов/материалов и 3D-визуализация рассчитываются отдельно. Итоговый состав и цена фиксируются после брифа."
+                : "Per-sotka (100 m²) rates apply to sites up to 10 sotkas with suitable base information. The minimum fee reflects the design effort even for a small plot. The Concept Design and Detailed Working Design prices are alternative package totals; they are not added together: the concept design gives the layout decision, the working documentation gives that same decision with dimensions, levels and materials — the set you can build from. GNSS site measurement, drainage and stormwater (from ₽12,000), lighting, irrigation, material/quantity schedules and 3D visualization are priced separately. The final scope and price are confirmed after a brief."}
             </p>
           </article>
         </>
@@ -350,8 +350,8 @@ export default function Services() {
       title: isRu ? "Строительство и контроль" : "Construction & control",
       navTitle: isRu ? "Строительство" : "Construction",
       lede: isRu
-        ? "Организуем работы и следим, чтобы на объекте строили по чертежу. Подрядчика находим мы — или работаем с вашим."
-        : "We coordinate the works and check that the site is built to the drawing. We find the contractor, or we work with yours.",
+        ? "Ведём проект и следим, чтобы на объекте строили по чертежу. Строит подрядчик, которого выбираете вы."
+        : "We run the project and check that the site is built to the drawing. Your contractor does the building.",
       content: (
         <>
           {serviceCard(works)}
@@ -386,8 +386,8 @@ export default function Services() {
             </h4>
             <p className="mt-4 text-sm leading-relaxed text-graphite/70">
               {isRu
-                ? "Работы выполняет подрядчик: мы подбираем исполнителя и ведём объёмы, график и качество — либо работаем с вашей бригадой по проекту. Стоимость строительства рассчитывается после осмотра участка и согласования объёмов. Аренда техники, инструмента, расходные материалы и доставка учитываются в смете отдельно."
-                : "A contractor carries out the work: we select one and manage the quantities, schedule and quality — or we work with your own crew against the design. Construction is quoted after reviewing the site and confirming quantities. Equipment and tool rental, consumables and delivery are itemized in the estimate."}
+                ? "Работы выполняет подрядчик, которого выбираете вы. Мы передаём ему проект, объёмы и график, ведём объёмы, сроки и качество — и отвечаем за то, чтобы на объекте строили по чертежу. Стоимость самих работ рассчитывается после осмотра участка и согласования объёмов. Аренда техники, инструмента, расходные материалы и доставка учитываются в смете отдельно."
+                : "Your appointed contractor carries out the work. We hand them the design, the quantities and the schedule, we manage the quantities, the timing and the quality — and answer for the site being built to the drawing. The contractor's own cost is confirmed after reviewing the site and agreeing quantities. Equipment and tool rental, consumables and delivery are itemized in the estimate."}
             </p>
           </article>
           <article className="border border-graphite/15 bg-white/40 p-6 sm:p-7">
@@ -399,8 +399,8 @@ export default function Services() {
             </p>
             <p className="mt-4 text-sm leading-relaxed text-graphite/75">
               {isRu
-                ? "Выезд до 2 часов в пределах МКАД: разберём вопросы заказчика и бригады по ландшафтному проекту, отметкам, покрытиям и последовательности работ; осмотрим видимые выполненные работы и дадим рекомендации. После выезда — краткое резюме с фото. Не является постоянным управлением бригадой или техническим надзором. За МКАД транспорт оплачивается отдельно."
-                : "A visit of up to 2 hours within MKAD to discuss the landscape design, levels, paving and work sequence with you and your crew; review visible completed work and give recommendations. Includes a brief photo summary. This is not ongoing crew management or technical supervision. Travel outside MKAD is extra."}
+                ? "Выезд до 2 часов в пределах МКАД: разберём вопросы заказчика и подрядчика по ландшафтному проекту, отметкам, покрытиям и последовательности работ; осмотрим видимые выполненные работы и дадим рекомендации. После выезда — краткое резюме с фото. Не является постоянным управлением бригадой или техническим надзором. За МКАД транспорт оплачивается отдельно."
+                : "A visit of up to 2 hours within MKAD to discuss the landscape design, levels, paving and work sequence with you and your builder; review visible completed work and give recommendations. Includes a brief photo summary. This is not ongoing crew management or technical supervision. Travel outside MKAD is extra."}
             </p>
           </article>
         </>

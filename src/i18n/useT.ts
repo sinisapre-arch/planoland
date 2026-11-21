@@ -74,8 +74,8 @@ export const strings = {
     en: "Sinisa Predragović at work on a site — designer and project manager of PlanoLand",
   },
   "studio.body1": {
-    ru: "Сад — это способ быть здесь и сейчас. Пространство, которое меняет образ мыслей и жизни, где человек чувствует опору, связь с собой и миром.",
-    en: "A garden is a way to be here and now. A space that changes how you think and live, where a person feels grounded and connected to themselves and the world.",
+    ru: "Сад — это способ быть здесь и сейчас. Пространство, где человек чувствует опору и связь — с собой и со своим домом.",
+    en: "A garden is a way to be here and now. A space where a person feels grounded and connected to themselves and their home.",
   },
   "studio.body2": {
     ru: "Скандинавский сад — фирменный стиль PlanoLand. Это философия ощущения, состояния и мысли, в которой среда формируется вокруг человека.",
@@ -221,8 +221,8 @@ export const strings = {
       en: "Design and project management",
     },
     "services.lede": {
-      ru: "Проектируем сад, считаем объёмы, организуем работы и проверяем, что на объекте строят по чертежу. Строительство можно передать подрядчику, которого находим мы, или вашей бригаде — тогда мы ведём её по проекту и отвечаем за соответствие готового сада. Работы можно вести поэтапно, по сезонам.",
-      en: "We design the garden, calculate quantities, coordinate the works and check that the site is built to the design. Construction can be handed to a contractor we find, or to your own crew — in that case we run it against the design and answer for the finished garden matching the drawing. The work can be delivered in phases across seasons.",
+      ru: "Проектируем сад, считаем объёмы, ведём проект и проверяем, что на объекте строят по чертежу. Строительство выполняет подрядчик, которого выбираете вы, — мы передаём ему проект, объёмы и график работ и отвечаем за соответствие готового сада проекту. Работы можно вести поэтапно, по сезонам.",
+      en: "We design the garden, calculate quantities, run the project and check that the site is built to the design. Construction is carried out by a contractor you appoint — we hand them the design, the quantities and the schedule, and answer for the finished garden matching the project. The work can be delivered in phases across seasons.",
     },
 
   // ---- Team ----
@@ -232,13 +232,13 @@ export const strings = {
     en: "The person who makes gardens",
   },
   "team.lede": {
-    ru: "PlanoLand — независимая студия ландшафтного дизайна, основанная Синишей Предраговичем. Он проектирует сады, считает объёмы, планирует работы, подбирает исполнителей и приезжает на объект, чтобы убедиться, что построено по чертежу. 15 лет опыта в Швеции, теперь студия работает в Москве и Московской области.",
-    en: "PlanoLand is an independent landscape design studio founded by Sinisa Predragović. He designs the gardens, calculates quantities, plans the works, finds the contractors and comes to the site to check that it is built to the drawing. Fifteen years of experience in Sweden, now working across Moscow and the Moscow region.",
+    ru: "PlanoLand — независимая студия ландшафтного дизайна, основанная Синишей Предраговичем. Он проектирует сады, считает объёмы, планирует работы и приезжает на объект, чтобы убедиться, что построено по чертежу. 15 лет опыта в Швеции, теперь студия работает в Москве и Московской области.",
+    en: "PlanoLand is an independent landscape design studio founded by Sinisa Predragović. He designs the gardens, calculates quantities, plans the works and comes to the site to check that it is built to the drawing. Fifteen years of experience in Sweden, now working across Moscow and the Moscow region.",
   },
   "team.studioNoteTitle": { ru: "Студия", en: "The studio" },
   "team.studioNote": {
-    ru: "PlanoLand — это основатель студии Синиша Предраговић и привлекаемые им специалисты. Постоянных сотрудников в штате нет, поэтому каждое звено подбирается под задачу: исполнитель на площадке, поставщик, садовник на сезон. Строительство ведётся подрядчиком — тем, которого находим мы, или тем, которого привлекаете вы; в обоих случаях на объекте присутствует дизайнер, а за соответствие готового сада проекту отвечает студия.",
-    en: "PlanoLand is Sinisa Predragović, the founder, and the specialists he brings in. There is no permanent staff, so every role is hired for the task: the contractor on site, the supplier, the gardener for the season. Construction is carried out by a contractor — one we find, or one you appoint; either way the designer is on site, and the studio is answerable for the finished garden matching the design.",
+    ru: "PlanoLand — это основатель студии Синиша Предраговић и привлекаемые им специалисты. Постоянного штата нет: дизайнер работает сам, остальные звенья — подрядчик на площадке, поставщик, садовник на сезон — подбираются под задачу. Строительство выполняет подрядчик, которого выбираете вы; на объекте присутствует дизайнер, а за соответствие готового сада проекту отвечает студия.",
+    en: "PlanoLand is Sinisa Predragović, the founder, and the specialists he brings in. There is no permanent staff: the designer works directly, and the other roles — the contractor on site, the supplier, the gardener for the season — are engaged for the task. Construction is carried out by a contractor you appoint; the designer is on site, and the studio is answerable for the finished garden matching the design.",
   },
 
   // ---- Contacts ----

@@ -41,23 +41,24 @@ export const services: {
       en: "from ₽5,000/sotka · ₽50,000 minimum",
     },
     body: {
-      ru: "Сочетаем обмер участка GNSS-приёмником (GPS) с фотограмметрией, чтобы учесть рельеф, существующие объекты и особенности территории, а затем наглядно показать будущий результат в 3D. Для каждого клиента создаём персональную страницу проекта с чертежами, концептуальными решениями и визуализациями. Вы можете следить за ходом работы, знакомиться с решениями на каждом этапе и согласовывать проект до утверждения финального плана.",
-      en: "We combine GNSS receiver (GPS) site measurement with photogrammetry to capture terrain, existing features and the character of the site, then present the proposed result in 3D. Each client gets a personal project page with drawings, design concepts and visualizations. You can follow progress, review decisions at every stage and approve the design before the final plan is signed off.",
+      ru: "Проектируем сад на основе фактических данных участка — рельефа, существующих объектов и ограничений, — а не по фотографии. Для каждого клиента создаём персональную страницу проекта с чертежами, решениями по планировке и правками. Вы следите за ходом работы, обсуждаете решения на каждом этапе и утверждаете планировку до того, как начинается рабочая документация.",
+      en: "We design the garden from the site's actual data — the terrain, what is already there and the constraints — rather than from a photograph. Each client gets a personal project page with the drawings, the layout decisions and the revisions. You follow the work as it happens, discuss the decisions at every stage and approve the layout before the working documentation starts.",
     },
     summary: {
-      ru: "Единый пакет: разрабатываем планировку и выдаём базовый комплект 2D-планов в PDF. Он показывает устройство сада и помогает согласовать решение и получить предварительную оценку работ. Полный набор технических чертежей для реализации относится к рабочему проекту.",
-      en: "One package: develop the layout and deliver a base set of 2D plans in PDF. It communicates the garden design, supports approval and helps obtain an initial work estimate. The full technical drawing set for construction is part of the working design.",
+      ru: "Единый пакет: разрабатываем планировку и выдаём комплект планов в PDF — генплан с зонами, план покрытий, план посадочных зон и газона. Он показывает устройство сада, помогает согласовать решение и получить предварительную оценку работ. Размеров и высот в нём нет — это в рабочей документации.",
+      en: "One package: we develop the layout and deliver a set of plans in PDF — the general plan with the zones, the paving plan, the planting-area plan and the lawn plan. It shows how the garden works, supports approval and helps obtain an initial work estimate. It carries no dimensions or levels — those are in the working documentation.",
     },
     why: {
-      ru: "Подходит, когда важно понять и согласовать общий план сада без заказа всех технических схем сразу. Концепция входит в цену — отдельной платы за неё нет.",
-      en: "A good fit when you need to understand and approve the overall garden plan without commissioning every technical drawing at once. The concept is included; there is no separate concept fee.",
+      ru: "Подходит, когда нужно понять и согласовать планировку сада — где терраса, дорожки, газон и посадочные зоны — и не заказывать все технические чертежи сразу. Планировочное решение входит в цену: отдельной платы за него нет. 3D-визуализация — отдельная услуга.",
+      en: "A good fit when you need to understand and agree the garden layout — where the terrace, paths, lawn and planting zones go — without commissioning every technical drawing at once. The layout work is included: there is no separate planning fee. 3D visualisation is a separate service.",
     },
     includes: [
       { ru: "Планировочное решение и до 2 раундов сводных правок к первому эскизу", en: "Layout concept and up to 2 consolidated revision rounds on the first draft" },
       { ru: "Генплан с основными зонами отдыха, террасой, дорожками, газоном и посадочными зонами", en: "General plan with main outdoor living areas, terrace, paths, lawn and planting zones" },
       { ru: "Базовый план покрытий, посадочных зон и газона; без перечня видов и количества растений", en: "Base paving, planting-area and lawn plans; no plant species list or quantities" },
       { ru: "Комплект согласованных чертежей в PDF; DWG — по согласованному составу", en: "Agreed drawing set in PDF; DWG by agreed scope" },
-      { ru: "Не включает подробную разбивку, ведомость объёмов материалов и отдельные инженерные разделы", en: "Excludes detailed set-out, material quantity takeoffs and separate engineering disciplines" },
+      { ru: "Не включает размеры и высоты, подробную разбивку, ведомость объёмов материалов и отдельные инженерные разделы", en: "Excludes dimensions and levels, detailed set-out, material quantity takeoffs and separate engineering disciplines" },
+      { ru: "3D-визуализация — отдельная услуга, её можно заказать после утверждения планировки", en: "3D visualisation is a separate service; it can be ordered once the layout is approved" },
     ],
   },
   {
@@ -68,16 +69,16 @@ export const services: {
       en: "from ₽8,000/sotka · ₽80,000 minimum",
     },
     body: {
-      ru: "Разбивочные чертежи, планы покрытий и посадочных зон, схема рулонного или посевного газона, подбор материалов, а также отдельные проекты освещения, полива и дренажа с высотными отметками и уклонами — состав документации согласуется для каждого проекта.",
-      en: "Set-out drawings, paving and planting-area plans, a ready-laid or seeded lawn plan, material selections, and optional lighting, irrigation and drainage designs with levels and slopes. The drawing scope is agreed for each project.",
+      ru: "Документация, по которой можно строить: разбивочные чертежи с размерами и высотными отметками, планы покрытий и посадочных зон, схема рулонного или посевного газона, вертикальная планировка с уклонами и подбор материалов. Отдельные проекты освещения, полива и дренажа — по согласованию; состав документации фиксируется для каждого проекта.",
+      en: "The documentation you can build from: set-out drawings with dimensions and level markers, paving and planting-area plans, a ready-laid or seeded lawn plan, vertical grading with slopes and material selections. Separate lighting, irrigation and drainage designs are by agreement, and the drawing scope is fixed for each project.",
     },
     summary: {
-      ru: "Подробный проект именно сада и благоустройства: планировка, зоны отдыха, покрытия и бордюры, газон, посадочные зоны, материалы покрытий, размеры и ключевые высоты. Инженерные системы и подбор конкретного ассортимента растений оформляются отдельно.",
-      en: "Detailed design of the garden and landscape works: layout, outdoor living areas, paving and kerbs, lawn, planting areas, surface materials, dimensions and key levels. Engineering systems and selection of specific plant varieties are separate services.",
+      ru: "Подробный проект именно сада и благоустройства: планировка, зоны отдыха, покрытия и бордюры, газон, посадочные зоны, материалы покрытий, размеры и ключевые высоты — то, что подрядчику нужно, чтобы построить без уточняющих вопросов. Инженерные системы и подбор конкретного ассортимента растений оформляются отдельно.",
+      en: "Detailed design of the garden and landscape works: layout, outdoor living areas, paving and kerbs, lawn, planting areas, surface materials, dimensions and key levels — what a contractor needs to build without asking for clarifications. Engineering systems and selection of specific plant varieties are separate services.",
     },
     why: {
-      ru: "Даёт подрядчику понятные размеры и отметки для мощения, озеленения и формирования рельефа, не перегружая базовую цену сторонними инженерными разделами.",
-      en: "Gives contractors clear dimensions and levels for paving, planting and shaping the site, while keeping other engineering disciplines outside the base price.",
+      ru: "Даёт подрядчику понятные размеры и отметки для мощения, озеленения и формирования рельефа, не перегружая базовую цену сторонними инженерными разделами. В отличие от концептуального проекта, здесь есть размеры, отметки и уклоны: с этим комплектом подрядчик строит, а не уточняет.",
+      en: "Gives contractors clear dimensions and levels for paving, planting and shaping the site, while keeping other engineering disciplines outside the base price. Unlike the concept design, this package carries dimensions, levels and slopes — a contractor can build from it rather than ask.",
     },
     includes: [
       { ru: "Всё, что входит в концептуальный проект", en: "Everything in the concept design" },
@@ -117,14 +118,18 @@ export const services: {
     },
   },
   {
-    title: { ru: "Организация работ", en: "Coordinating the works" },
+    title: { ru: "Ведение проекта", en: "Project management" },
     price: {
       ru: "Рассчитывается после осмотра участка",
       en: "Quoted after the site review",
     },
     body: {
-      ru: "Строительство можно вести двумя способами. Первый — подрядчика находит PlanoLand: мы готовим проект, объёмы, ведомость и график, подбираем исполнителя и ведём работы, контролируя каждый этап. Второй — подрядчик уже есть: тогда мы работаем с вашей бригадой по проекту, решаем узлы по ходу и отвечаем за то, чтобы готовый сад соответствовал чертежу. В обоих случаях объёмы и сметы согласовываются до начала работ, а на объекте присутствует дизайнер.",
-      en: "There are two ways to run the construction. First, PlanoLand finds the contractor: we prepare the design, quantities, bill of materials and schedule, select the contractor and run the works, controlling every stage. Second, you already have a contractor: we then work with your crew against the design, settle details as they come up and answer for the finished garden matching the drawing. In both cases quantities and estimates are agreed before work starts, and the designer is on site.",
+      ru: "Строительство выполняет подрядчик, которого выбираете вы. Мы готовим проект, объёмы, ведомость и график работ, передаём их подрядчику и ведём проект: согласовываем с ним решения по ходу работ, сверяем объёмы и отвечаем за то, чтобы готовый сад соответствовал чертежу. Объёмы и сметы фиксируются до начала работ, а на объекте присутствует дизайнер.",
+      en: "Your contractor carries out the construction — you appoint them. We prepare the design, quantities, bill of materials and schedule, hand them over and run the project: we agree details with your contractor as the work goes on, check quantities and answer for the finished garden matching the drawing. Quantities and estimates are fixed before work starts, and the designer is on site.",
+    },
+    why: {
+      ru: "PlanoLand не строит сад сама. Наша зона — проект, объёмы и контроль того, что на объекте строят по чертежу. Если работа отклоняется от проекта, мы замечаем это на месте, до того как участок закроют.",
+      en: "PlanoLand does not build the garden itself. Our side is the design, the quantities and checking that the site is built to the drawing. If the work departs from the project, we catch it on site, before the area is closed up.",
     },
   },
   {
@@ -147,7 +152,7 @@ export const serviceFaq: { question: LocalizedString; answer: LocalizedString }[
   },
   {
     question: { ru: "Входит ли планировочная концепция в цену проекта?", en: "Is the layout concept included in the design price?" },
-    answer: { ru: "Да. И концептуальный проект, и рабочая документация включают разработку и согласование планировочного решения. Концептуальный проект даёт генплан и основные планы сада. Рабочая документация добавляет подробные размеры и отметки для дорожек, площадок, бордюров, газона и посадочных зон. Конкретные виды и количество растений, дендроплан и ассортиментная/посадочная ведомость в эти пакеты не входят: их можно заказать отдельно после согласования планировки, пожеланий и бюджета. Дренаж и ливнёвка, освещение, автополив, GNSS-съёмка, ведомости материалов и 3D-визуализация также рассчитываются отдельно. Пакеты «Концептуальный проект» и «Рабочая документация» — альтернативные цены, они не складываются.", en: "Yes. Both the concept design and the detailed working design include developing and agreeing the layout. The concept design provides the general and key garden plans. The detailed working design adds precise dimensions and levels for paths, paved areas, kerbs, lawn and planting areas. Specific plant varieties and quantities, a dendroplan and planting schedule are not included in these packages; they can be scoped separately once the layout, preferences and budget are agreed. Drainage and stormwater, lighting, irrigation, GNSS survey, material schedules and 3D visualization are also priced separately. The Concept Design and Detailed Working Design packages are alternative prices, not cumulative." },
+    answer: { ru: "Да. И концептуальный проект, и рабочая документация включают разработку и согласование планировочного решения. Концептуальный проект даёт генплан и основные планы сада — что и где будет, без размеров и высот. Рабочая документация добавляет подробные размеры и отметки для дорожек, площадок, бордюров, газона и посадочных зон — то, по чему подрядчик строит, а не уточняет. Конкретные виды и количество растений, дендроплан и ассортиментная/посадочная ведомость в эти пакеты не входят: их можно заказать отдельно после согласования планировки, пожеланий и бюджета. Дренаж и ливнёвка, освещение, автополив, GNSS-съёмка, ведомости материалов и 3D-визуализация также рассчитываются отдельно. Пакеты «Концептуальный проект» и «Рабочая документация» — альтернативные цены, они не складываются.", en: "Yes. Both the concept design and the detailed working design include developing and agreeing the layout. The concept design gives the general and key garden plans — what goes where, without dimensions or levels. The detailed working design adds precise dimensions and levels for paths, paved areas, kerbs, lawn and planting areas — what a contractor builds from rather than asks about. Specific plant varieties and quantities, a dendroplan and planting schedule are not included in these packages; they can be scoped separately once the layout, preferences and budget are agreed. Drainage and stormwater, lighting, irrigation, GNSS survey, material schedules and 3D visualisation are also priced separately. The Concept Design and Detailed Working Design packages are alternative prices, not cumulative." },
   },
   {
     question: { ru: "Сколько правок входит в стоимость проекта?", en: "How many revisions are included in the design price?" },
@@ -243,8 +248,8 @@ export const team: {
       en: "Founder of PlanoLand, designer and project manager",
     },
     bio: {
-      ru: "Синиша 15 лет проектировал и строил ландшафты в Швеции, прежде чем привезти это ремесло в Подмосковье и основать PlanoLand. Сегодня он работает как независимый дизайнер и руководитель проекта: сам проектирует сад, считает объёмы, планирует работы, подбирает исполнителей и приезжает на объект, чтобы убедиться, что построено по чертежу. Его страсть — создавать пространства на поколения, которые приносят красоту, тишину и радость тем, кто в них живёт.",
-      en: "Sinisa spent 15 years designing and building landscapes in Sweden before bringing his craft to the Moscow region and founding PlanoLand. Today he works as an independent designer and project manager: he designs the garden himself, calculates quantities, plans the works, finds the contractors and comes to the site to check that it is built to the drawing. His passion is creating spaces that last for generations and bring beauty, calm and joy to the people who live in them.",
+      ru: "Синиша 15 лет проектировал и строил ландшафты в Швеции, прежде чем привезти это ремесло в Подмосковье и основать PlanoLand. Сегодня он работает как независимый дизайнер и руководитель проекта: сам проектирует сад, считает объёмы, планирует работы и приезжает на объект, чтобы убедиться, что построено по чертежу. Его страсть — создавать пространства на поколения, которые приносят красоту, тишину и радость тем, кто в них живёт.",
+      en: "Sinisa spent 15 years designing and building landscapes in Sweden before bringing his craft to the Moscow region and founding PlanoLand. Today he works as an independent designer and project manager: he designs the garden himself, calculates quantities, plans the works and comes to the site to check that it is built to the drawing. His passion is creating spaces that last for generations and bring beauty, calm and joy to the people who live in them.",
     },
   },
 ];
