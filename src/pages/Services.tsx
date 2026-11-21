@@ -26,7 +26,7 @@ export default function Services() {
         },
       }],
     },
-    { title: isRu ? "СТРОИТЕЛЬСТВО И СОПРОВОЖДЕНИЕ" : "CONSTRUCTION & SUPERVISION", items: [services[4], services[3]] },
+    { title: isRu ? "СТРОИТЕЛЬСТВО И КОНТРОЛЬ" : "CONSTRUCTION & CONTROL", items: [services[4], services[3]] },
     { title: isRu ? "УХОД ЗА САДОМ" : "GARDEN MAINTENANCE", items: [services[5]] },
   ];
 
@@ -297,8 +297,8 @@ export default function Services() {
       <section className="bg-cream px-4 py-20 text-graphite sm:px-6 lg:px-10">
         <div className="mx-auto max-w-[1440px]">
           <div className="mb-10 max-w-3xl">
-            <p className="mb-4 text-xs uppercase tracking-[0.2em] text-graphite/50">{isRu ? "СТРОИТЕЛЬСТВО И РЕАЛИЗАЦИЯ" : "CONSTRUCTION & DELIVERY"}</p>
-            <h2 className="font-expanded text-4xl font-black uppercase tracking-[-0.04em] sm:text-5xl">{isRu ? "Воплощаем согласованный проект на участке" : "Build the approved design on site"}</h2>
+            <p className="mb-4 text-xs uppercase tracking-[0.2em] text-graphite/50">{isRu ? "СТРОИТЕЛЬСТВО ПОД КОНТРОЛЕМ" : "CONSTRUCTION UNDER CONTROL"}</p>
+            <h2 className="font-expanded text-4xl font-black uppercase tracking-[-0.04em] sm:text-5xl">{isRu ? "Организуем работы и следим, чтобы строили по чертежу" : "We coordinate the works and check they follow the drawing"}</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             {[
@@ -312,7 +312,7 @@ export default function Services() {
             ))}
           </div>
           <p className="mt-6 text-sm leading-relaxed text-graphite/60">
-            {isRu ? "Стоимость строительства рассчитывается после осмотра участка и согласования объёмов. Аренда техники, инструмента, расходные материалы и доставка учитываются в смете отдельно." : "Construction is quoted after reviewing the site and confirming quantities. Equipment and tool rental, consumables and delivery are itemized in the estimate."}
+            {isRu ? "Работы выполняет подрядчик: мы подбираем исполнителя и ведём объёмы, график и качество — либо работаем с вашей бригадой по проекту. Стоимость строительства рассчитывается после осмотра участка и согласования объёмов. Аренда техники, инструмента, расходные материалы и доставка учитываются в смете отдельно." : "A contractor carries out the work: we select one and manage the quantities, schedule and quality — or we work with your own crew against the design. Construction is quoted after reviewing the site and confirming quantities. Equipment and tool rental, consumables and delivery are itemized in the estimate."}
           </p>
         </div>
       </section>

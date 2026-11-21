@@ -24,31 +24,31 @@ export const strings = {
     en: "Scandinavian design",
   },
   "hero.title": {
-    ru: "От первого эскиза до последнего камня",
-    en: "From the first sketch to the last stone",
+    ru: "От эскиза до готового сада",
+    en: "From sketch to finished garden",
   },
   "hero.lede": {
-    ru: "Мы спроектируем и построим вам сад с нуля. 15 лет опыта в Швеции — работаем в Подмосковье.",
-    en: "We design and build your garden from scratch. 15 years of experience in Sweden — now working in the Moscow region.",
+    ru: "Проектирую сад, планирую работы и слежу, чтобы на объекте строили точно по проекту. 15 лет опыта в Швеции — работаю в Подмосковье.",
+    en: "I design the garden, plan the works and make sure the site is built to the drawing. 15 years of experience in Sweden — now working in the Moscow region.",
   },
   "hero.stat1.value": { ru: "15 лет", en: "15 years" },
   "hero.stat1.label": { ru: "в дизайне и строительстве", en: "in design and construction" },
   "hero.stat2.value": { ru: "300+", en: "300+" },
   "hero.stat2.label": { ru: "садов спроектировано и построено", en: "gardens designed and built" },
-  "hero.stat3.value": { ru: "Команда", en: "One team" },
+  "hero.stat3.value": { ru: "Контроль", en: "Control" },
   "hero.stat3.label": {
-    ru: "авторский надзор и личное присутствие дизайнера на объекте",
-    en: "design supervision and the designer's personal presence on site",
+    ru: "авторский надзор и проверка, что всё построено по проекту",
+    en: "design supervision and checking that everything is built to the design",
   },
 
   // ---- Home page metadata (must match index.html) ----
   "home.seoTitle": {
-    ru: "PlanoLand — ландшафтная студия полного цикла в Подмосковье",
-    en: "PlanoLand — full-cycle landscape studio in the Moscow region",
+    ru: "PlanoLand — ландшафтный дизайн и ведение проекта в Подмосковье",
+    en: "PlanoLand — landscape design and project management in the Moscow region",
   },
   "home.seoDescription": {
-    ru: "Проектируем и строим скандинавские сады под ключ в Подмосковье: 15 лет опыта, 300+ реализованных садов, собственные бригады и авторский надзор дизайнера на объекте. Запишитесь на консультацию.",
-    en: "We design and build Scandinavian gardens across the Moscow region: 15 years of experience, 300+ completed gardens, in-house crews and the designer's personal supervision on site. Book a consultation.",
+    ru: "Ландшафтный дизайн и ведение проекта в Подмосковье: проектирование скандинавских садов, расчёт объёмов, организация работ, авторский надзор на объекте и проверка, что всё построено по проекту. 15 лет опыта, 300+ садов. Запишитесь на консультацию.",
+    en: "Landscape design and project management in the Moscow region: Scandinavian garden design, quantity takeoffs, work coordination, design supervision on site and checking that everything is built to the design. 15 years of experience, 300+ gardens. Book a consultation.",
   },
 
   // ---- Featured projects ----
@@ -58,20 +58,20 @@ export const strings = {
 
   // ---- Studio ----
   "studio.eyebrow": {
-    ru: "PlanoLand — студия ландшафтного дизайна",
-    en: "PlanoLand landscape design studio",
+    ru: "PlanoLand — независимый дизайнер и руководитель проекта",
+    en: "PlanoLand — independent designer and project manager",
   },
   "studio.title": {
     ru: "Создаем пространство, в котором хочется жить",
     en: "We create a space you want to live in",
   },
   "studio.caption": {
-    ru: "Синиша Предраговић — основатель, дизайнер и строитель PlanoLand",
-    en: "Sinisa Predragović — founder, designer and builder of PlanoLand",
+    ru: "Синиша Предраговић — дизайнер и руководитель проекта PlanoLand",
+    en: "Sinisa Predragović — designer and project manager at PlanoLand",
   },
   "studio.alt": {
-    ru: "Синиша Предраговић за работой на объекте — основатель и дизайнер студии PlanoLand",
-    en: "Sinisa Predragović at work on a site — founder and designer of PlanoLand",
+    ru: "Синиша Предраговић за работой на объекте — дизайнер и руководитель проекта студии PlanoLand",
+    en: "Sinisa Predragović at work on a site — designer and project manager of PlanoLand",
   },
   "studio.body1": {
     ru: "Сад — это способ быть здесь и сейчас. Пространство, которое меняет образ мыслей и жизни, где человек чувствует опору, связь с собой и миром.",
@@ -213,16 +213,16 @@ export const strings = {
 
   // ---- Services ----
     "services.eyebrow": {
-      ru: "Услуги студии",
-      en: "Studio services",
+      ru: "Мои услуги",
+      en: "My services",
     },
     "services.title": {
-      ru: "Полный цикл создания сада",
-      en: "A full cycle of garden making",
+      ru: "Проектирование и ведение проекта",
+      en: "Design and project management",
     },
     "services.lede": {
-      ru: "Ведём проект от первой встречи до реализации и ухода. Предлагаем воплотить проект под ключ. Сад можно строить поэтапно, по сезонам — не обязательно делать всё сразу.",
-      en: "We guide each project from the first meeting through construction and ongoing care. Our turnkey service takes the design all the way to a finished garden. The work can be delivered in phases across seasons, so you do not have to do everything at once.",
+      ru: "Проектирую сад, считаю объёмы, организую работы и проверяю, что на объекте строят по чертежу. Строительство можно передать подрядчику, которого найдём мы, или вашей бригаде — тогда я веду её по проекту и отвечаю за соответствие готового сада. Работы можно вести поэтапно, по сезонам.",
+      en: "I design the garden, calculate quantities, coordinate the works and check that the site is built to the drawing. Construction can be handed to a contractor we find, or to your own crew — in that case I run it against the design and answer for the finished garden matching the drawing. The work can be delivered in phases across seasons.",
     },
 
   // ---- Team ----
@@ -232,13 +232,13 @@ export const strings = {
     en: "The person who makes gardens",
   },
   "team.lede": {
-    ru: "Синиша Предраговић проектирует и строит сады сам — от первого эскиза до последнего камня. 15 лет опыта в Швеции, теперь он работает в Подмосковье и ведёт каждый проект лично.",
-    en: "Sinisa Predragović designs and builds the gardens himself — from the first sketch to the last stone. Fifteen years of experience in Sweden, now working in the Moscow region and leading every project personally.",
+    ru: "Синиша Предраговић проектирует сады сам и ведёт их строительство: считает объёмы, планирует работы, подбирает исполнителей и приезжает на объект, чтобы убедиться, что построено по чертежу. 15 лет опыта в Швеции, теперь он работает в Подмосковье.",
+    en: "Sinisa Predragović designs the gardens himself and runs their construction: he calculates quantities, plans the works, finds the contractors and comes to the site to check that it is built to the drawing. Fifteen years of experience in Sweden, now working in the Moscow region.",
   },
   "team.studioNoteTitle": { ru: "Студия", en: "The studio" },
   "team.studioNote": {
-    ru: "PlanoLand — небольшая студия: Синиша ведёт проекты сам, а работы выполняют собственные бригады. Заказчик получает одного ответственного за весь цикл — от обследования участка и проекта до строительства и ухода за садом.",
-    en: "PlanoLand is a small studio: Sinisa runs the projects himself and the work is carried out by his own crews. The client gets one person responsible for the whole cycle — from the site survey and the design to construction and ongoing care.",
+    ru: "PlanoLand — это я и привлекаемые мной специалисты. Постоянных сотрудников в штате нет, поэтому каждое звено подбирается под задачу: исполнитель на площадке, поставщик, садовник на сезон. Строительство ведётся подрядчиком — тем, которого найдём мы, или тем, которого привлечёте вы; в обоих случаях на объекте присутствует дизайнер, а за соответствие готового сада проекту отвечаю я.",
+    en: "PlanoLand is me and the specialists I bring in. There is no permanent staff, so every role is hired for the task: the contractor on site, the supplier, the gardener for the season. Construction is carried out by a contractor — one we find, or one you appoint; either way the designer is on site, and I am answerable for the finished garden matching the design.",
   },
 
   // ---- Contacts ----

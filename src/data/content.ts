@@ -50,19 +50,19 @@ export const services: {
     title: { ru: "Авторский надзор", en: "Design supervision" },
     price: { ru: "от 15 000 ₽ / выезд", en: "from ₽15,000 / visit" },
     body: {
-      ru: "Остаёмся на объекте в ходе стройки, проверяем работы на соответствие утверждённому проекту и вносим правки по месту при необходимости.",
-      en: "We stay on site through construction, checking the work against the approved design and adjusting details on the spot as needed.",
+      ru: "Приезжаю на объект в ходе строительства, сверяю работы с утверждённым проектом, отметками и объёмами и даю указания на месте. Это главная гарантия того, что сад построен так, как нарисован — и возможность поймать ошибку до того, как её закопают.",
+      en: "I come to the site during construction, check the work against the approved design, levels and quantities, and give instructions on the spot. This is the main guarantee that the garden is built the way it was drawn — and the chance to catch a mistake before it is buried.",
     },
   },
   {
-    title: { ru: "Реализация", en: "Implementation" },
+    title: { ru: "Организация работ", en: "Coordinating the works" },
     price: {
       ru: "Рассчитывается после осмотра участка",
       en: "Quoted after the site review",
     },
     body: {
-      ru: "Полный цикл реализации ландшафтного проекта — от вертикальной планировки до посадки крупномеров. Собственные строительные бригады и авторский надзор руководителя компании обеспечивают точное воплощение решений на каждом этапе. Благодаря личному участию руководителя в проектировании и реализации замысел сохраняется в деталях — от чертежа до готового сада.",
-      en: "We deliver the complete landscape project, from grading to planting mature trees. Our own construction teams and the company director's design supervision ensure that every decision is carried through accurately. With the director personally involved in both design and construction, the original vision is preserved in every detail, from drawing to finished garden.",
+      ru: "Строительство можно вести двумя способами. Первый — подрядчика находит PlanoLand: мы готовим проект, объёмы, ведомость и график, подбираем исполнителя и ведём работы, контролируя каждый этап. Второй — подрядчик уже есть: тогда мы работаем с вашей бригадой по проекту, решаем узлы по ходу и отвечаем за то, чтобы готовый сад соответствовал чертежу. В обоих случаях объёмы и сметы согласовываются до начала работ, а на объекте присутствует дизайнер.",
+      en: "There are two ways to run the construction. First, PlanoLand finds the contractor: we prepare the design, quantities, bill of materials and schedule, select the contractor and run the works, controlling every stage. Second, you already have a contractor: we then work with your crew against the design, settle details as they come up and answer for the finished garden matching the drawing. In both cases quantities and estimates are agreed before work starts, and the designer is on site.",
     },
   },
   {
@@ -230,12 +230,12 @@ export const team: {
   {
     name: { ru: "Синиша Предраговић", en: "Sinisa Predragović" },
     role: {
-      ru: "Основатель PlanoLand, дизайнер и строитель",
-      en: "Founder of PlanoLand, designer and builder",
+      ru: "Основатель PlanoLand, дизайнер и руководитель проекта",
+      en: "Founder of PlanoLand, designer and project manager",
     },
     bio: {
-      ru: "Синиша 15 лет проектировал и строил ландшафты в Швеции, прежде чем привезти это ремесло в Подмосковье и основать PlanoLand. Он участвует в каждом проекте от первого эскиза до последнего камня: сам проектирует и строит сад. Его страсть — создавать пространства на поколения, которые приносят красоту, тишину и радость тем, кто в них живёт.",
-      en: "Sinisa spent 15 years designing and building landscapes in Sweden before bringing his craft to the Moscow region and founding PlanoLand. He takes part in every project from the first sketch to the last stone, designing and building the garden himself. His passion is creating spaces that last for generations and bring beauty, calm and joy to the people who live in them.",
+      ru: "Синиша 15 лет проектировал и строил ландшафты в Швеции, прежде чем привезти это ремесло в Подмосковье и основать PlanoLand. Сегодня он работает как независимый дизайнер и руководитель проекта: сам проектирует сад, считает объёмы, планирует работы, подбирает исполнителей и приезжает на объект, чтобы убедиться, что построено по чертежу. Его страсть — создавать пространства на поколения, которые приносят красоту, тишину и радость тем, кто в них живёт.",
+      en: "Sinisa spent 15 years designing and building landscapes in Sweden before bringing his craft to the Moscow region and founding PlanoLand. Today he works as an independent designer and project manager: he designs the garden himself, calculates quantities, plans the works, finds the contractors and comes to the site to check that it is built to the drawing. His passion is creating spaces that last for generations and bring beauty, calm and joy to the people who live in them.",
     },
   },
 ];
