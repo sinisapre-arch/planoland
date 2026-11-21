@@ -600,9 +600,7 @@ export default function Services() {
               {isRu ? "ПОЛЕЗНО ЗНАТЬ" : "GOOD TO KNOW"}
             </p>
             <h2 className="font-expanded text-4xl font-black uppercase tracking-[-0.04em] sm:text-5xl">
-              {isRu
-                ? "Вопросы о проектировании и работах"
-                : "Planning & construction guide"}
+              {isRu ? "Частые вопросы" : "Frequently asked questions"}
             </h2>
             <p className="mt-5 leading-relaxed text-cream/70">
               {isRu
