@@ -50,8 +50,8 @@ export const services: {
     title: { ru: "Авторский надзор", en: "Design supervision" },
     price: { ru: "от 15 000 ₽ / выезд", en: "from ₽15,000 / visit" },
     body: {
-      ru: "Приезжаю на объект в ходе строительства, сверяю работы с утверждённым проектом, отметками и объёмами и даю указания на месте. Это главная гарантия того, что сад построен так, как нарисован — и возможность поймать ошибку до того, как её закопают.",
-      en: "I come to the site during construction, check the work against the approved design, levels and quantities, and give instructions on the spot. This is the main guarantee that the garden is built the way it was drawn — and the chance to catch a mistake before it is buried.",
+      ru: "Приезжаем на объект в ходе строительства, сверяем работы с утверждённым проектом, отметками и объёмами и даём указания на месте. Это главная гарантия того, что сад построен так, как нарисован — и возможность поймать ошибку до того, как её закопают.",
+      en: "We come to the site during construction, check the work against the approved design, levels and quantities, and give instructions on the spot. This is the main guarantee that the garden is built the way it was drawn — and the chance to catch a mistake before it is buried.",
     },
   },
   {

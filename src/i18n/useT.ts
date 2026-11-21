@@ -28,8 +28,8 @@ export const strings = {
     en: "From sketch to finished garden",
   },
   "hero.lede": {
-    ru: "Проектирую сад, планирую работы и слежу, чтобы на объекте строили точно по проекту. 15 лет опыта в Швеции — работаю в Подмосковье.",
-    en: "I design the garden, plan the works and make sure the site is built to the drawing. 15 years of experience in Sweden — now working in the Moscow region.",
+    ru: "Проектируем сад, планируем работы и следим, чтобы на объекте строили точно по проекту. 15 лет опыта в Швеции — работаем в Москве и Московской области.",
+    en: "We design the garden, plan the works and make sure the site is built to the design. 15 years of experience in Sweden, now working across Moscow and the Moscow region.",
   },
   "hero.stat1.value": { ru: "15 лет", en: "15 years" },
   "hero.stat1.label": { ru: "в дизайне и строительстве", en: "in design and construction" },
@@ -58,8 +58,8 @@ export const strings = {
 
   // ---- Studio ----
   "studio.eyebrow": {
-    ru: "PlanoLand — независимый дизайнер и руководитель проекта",
-    en: "PlanoLand — independent designer and project manager",
+    ru: "Независимый ландшафтный дизайнер и руководитель проекта",
+    en: "Independent landscape designer and project manager",
   },
   "studio.title": {
     ru: "Создаем пространство, в котором хочется жить",
@@ -213,16 +213,16 @@ export const strings = {
 
   // ---- Services ----
     "services.eyebrow": {
-      ru: "Мои услуги",
-      en: "My services",
+      ru: "Услуги студии",
+      en: "Studio services",
     },
     "services.title": {
       ru: "Проектирование и ведение проекта",
       en: "Design and project management",
     },
     "services.lede": {
-      ru: "Проектирую сад, считаю объёмы, организую работы и проверяю, что на объекте строят по чертежу. Строительство можно передать подрядчику, которого найдём мы, или вашей бригаде — тогда я веду её по проекту и отвечаю за соответствие готового сада. Работы можно вести поэтапно, по сезонам.",
-      en: "I design the garden, calculate quantities, coordinate the works and check that the site is built to the drawing. Construction can be handed to a contractor we find, or to your own crew — in that case I run it against the design and answer for the finished garden matching the drawing. The work can be delivered in phases across seasons.",
+      ru: "Проектируем сад, считаем объёмы, организуем работы и проверяем, что на объекте строят по чертежу. Строительство можно передать подрядчику, которого находим мы, или вашей бригаде — тогда мы ведём её по проекту и отвечаем за соответствие готового сада. Работы можно вести поэтапно, по сезонам.",
+      en: "We design the garden, calculate quantities, coordinate the works and check that the site is built to the design. Construction can be handed to a contractor we find, or to your own crew — in that case we run it against the design and answer for the finished garden matching the drawing. The work can be delivered in phases across seasons.",
     },
 
   // ---- Team ----
@@ -232,13 +232,13 @@ export const strings = {
     en: "The person who makes gardens",
   },
   "team.lede": {
-    ru: "Синиша Предраговић проектирует сады сам и ведёт их строительство: считает объёмы, планирует работы, подбирает исполнителей и приезжает на объект, чтобы убедиться, что построено по чертежу. 15 лет опыта в Швеции, теперь он работает в Подмосковье.",
-    en: "Sinisa Predragović designs the gardens himself and runs their construction: he calculates quantities, plans the works, finds the contractors and comes to the site to check that it is built to the drawing. Fifteen years of experience in Sweden, now working in the Moscow region.",
+    ru: "PlanoLand — независимая студия ландшафтного дизайна, основанная Синишей Предраговичем. Он проектирует сады, считает объёмы, планирует работы, подбирает исполнителей и приезжает на объект, чтобы убедиться, что построено по чертежу. 15 лет опыта в Швеции, теперь студия работает в Москве и Московской области.",
+    en: "PlanoLand is an independent landscape design studio founded by Sinisa Predragović. He designs the gardens, calculates quantities, plans the works, finds the contractors and comes to the site to check that it is built to the drawing. Fifteen years of experience in Sweden, now working across Moscow and the Moscow region.",
   },
   "team.studioNoteTitle": { ru: "Студия", en: "The studio" },
   "team.studioNote": {
-    ru: "PlanoLand — это я и привлекаемые мной специалисты. Постоянных сотрудников в штате нет, поэтому каждое звено подбирается под задачу: исполнитель на площадке, поставщик, садовник на сезон. Строительство ведётся подрядчиком — тем, которого найдём мы, или тем, которого привлечёте вы; в обоих случаях на объекте присутствует дизайнер, а за соответствие готового сада проекту отвечаю я.",
-    en: "PlanoLand is me and the specialists I bring in. There is no permanent staff, so every role is hired for the task: the contractor on site, the supplier, the gardener for the season. Construction is carried out by a contractor — one we find, or one you appoint; either way the designer is on site, and I am answerable for the finished garden matching the design.",
+    ru: "PlanoLand — это основатель студии Синиша Предраговић и привлекаемые им специалисты. Постоянных сотрудников в штате нет, поэтому каждое звено подбирается под задачу: исполнитель на площадке, поставщик, садовник на сезон. Строительство ведётся подрядчиком — тем, которого находим мы, или тем, которого привлекаете вы; в обоих случаях на объекте присутствует дизайнер, а за соответствие готового сада проекту отвечает студия.",
+    en: "PlanoLand is Sinisa Predragović, the founder, and the specialists he brings in. There is no permanent staff, so every role is hired for the task: the contractor on site, the supplier, the gardener for the season. Construction is carried out by a contractor — one we find, or one you appoint; either way the designer is on site, and the studio is answerable for the finished garden matching the design.",
   },
 
   // ---- Contacts ----
