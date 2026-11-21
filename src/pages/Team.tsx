@@ -20,14 +20,15 @@ export default function Team() {
       />
 
       <section className="bg-cream px-4 pb-20 text-graphite sm:px-6 lg:px-10">
-        {/* The founders portrait is a single photograph of both people, so it
-            is shown once here rather than duplicated on every member card. */}
-        <div className="mx-auto mb-12 max-w-[1760px]">
+        {/* The founder portrait is a single vertical photograph of Sinisa
+            Predragović, so it is shown once in its own frame rather than
+            repeated on every member card. */}
+        <div className="mx-auto mb-12 max-w-[520px]">
           <figure className="relative overflow-hidden bg-graphite">
             <img
               src={assets.studio}
               alt={t("studio.alt")}
-              className="max-h-[70vh] w-full object-cover object-top"
+              className="aspect-[3/4] w-full object-cover object-top"
             />
             <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-cream">
               <p className="max-w-xs text-xs font-semibold uppercase leading-relaxed tracking-[0.18em]">

@@ -8,7 +8,7 @@ For example `public/images/hero/hero.webp` is referenced in code as `/images/her
 | Folder | Contents |
 | --- | --- |
 | `hero/` | Full-bleed homepage hero image (recommended 2560×1707, WebP, ~200–400 KB) |
-| `studio/` | Founders / team photo (used on Home "Studio" section) |
+| `studio/` | Founder portrait (used on the Home "Studio" section, the Team page and the Services band). Source of truth is the archived photo — see `scripts/optimize-images.mjs` |
 | `projects/` | Per-project imagery. Use subfolders per slug, e.g. `projects/ferma/01.webp` |
 | `misc/` | Backgrounds, textures, anything else |
 

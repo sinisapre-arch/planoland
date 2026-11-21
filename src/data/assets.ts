@@ -5,7 +5,7 @@
 export const assets = {
   // Local optimized assets (see scripts/optimize-images.mjs).
   hero: "/images/hero/hero.webp",
-  studio: "/images/studio/founders.webp",
+  studio: "/images/studio/founder-sinisa.webp",
   bg3: "/images/scandinavian-garden.webp",
   socials: {
     youtube: "/images/social/youtube.svg",

@@ -66,12 +66,12 @@ export const strings = {
     en: "We create a space you want to live in",
   },
   "studio.caption": {
-    ru: "Синиша Предраговић и Лыхно Георгий Александрович — основатели PlanoLand",
-    en: "Siniša Predragović and Georgiy A. Lykhno — founders of PlanoLand",
+    ru: "Синиша Предраговић — основатель, дизайнер и строитель PlanoLand",
+    en: "Sinisa Predragović — founder, designer and builder of PlanoLand",
   },
   "studio.alt": {
-    ru: "Синиша Предраговић и Георгий Лыхно — основатели студии PlanoLand",
-    en: "Sinisa Predragović and Georgy Lykhno, founders of PlanoLand",
+    ru: "Синиша Предрагович за работой на объекте — основатель и дизайнер студии PlanoLand",
+    en: "Sinisa Predragović at work on a site — founder and designer of PlanoLand",
   },
   "studio.body1": {
     ru: "Сад — это способ быть здесь и сейчас. Пространство, которое меняет образ мыслей и жизни, где человек чувствует опору, связь с собой и миром.",

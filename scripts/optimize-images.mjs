@@ -1,53 +1,62 @@
-// One-off image optimization. Converts the raw dropped-in PNGs to WebP at
+// Image optimization. Converts the raw dropped-in PNGs to WebP at
 // sensible web sizes. Run with: node scripts/optimize-images.mjs
 //
-// Hero:   keep 16:9 frame, downscale to 2560px wide. Quality 78.
-// Studio: portrait 3:4, downscale to ~1200px wide. Quality 80.
+// Studio: founder portrait, downscale to ~1200px wide. Quality 82.
+// (The hero image is a one-off asset and is not touched by this script.)
 import sharp from "sharp";
-import { readFile } from "node:fs/promises";
+import { readFile, stat } from "node:fs/promises";
 
-const QUALITY_HERO = 78;
-const QUALITY_STUDIO = 80;
+const QUALITY_STUDIO = 82;
+
+async function exists(path) {
+  try {
+    await stat(path);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/** Downscale to a max width (never enlarges) and write a webp. */
+async function convert({ in: input, out: output, maxWidth, quality }) {
+  if (!(await exists(input))) {
+    console.log(`skip: ${input} not found`);
+    return;
+  }
+  const data = await readFile(input);
+  const meta = await sharp(data).metadata();
+  console.log(`${input} -> ${output}`);
+  console.log(
+    `  source: ${meta.width}x${meta.height}, ${(data.length / 1024 / 1024).toFixed(2)} MB`,
+  );
+
+  const pipeline =
+    meta.width > maxWidth
+      ? sharp(data).resize({ width: maxWidth, withoutEnlargement: true })
+      : sharp(data);
+
+  await pipeline.webp({ quality }).toFile(output);
+  const result = await sharp(await readFile(output)).metadata();
+  const size = (await readFile(output)).length;
+  console.log(
+    `  output: ${result.width}x${result.height}, ${(size / 1024).toFixed(0)} KB`,
+  );
+}
 
 async function run() {
-  // ---- Hero ----
-  const heroIn = "public/images/hero/K3_00265_.png";
-  const heroOut = "public/images/hero/hero.webp";
-  console.log(`Hero: ${heroIn} -> ${heroOut}`);
-  const heroData = await readFile(heroIn);
-  const heroMeta = await sharp(heroData).metadata();
-  console.log(`  source: ${heroMeta.width}x${heroMeta.height}, ${(heroData.length / 1024 / 1024).toFixed(2)} MB`);
+  // The raw photo is archived outside the repo so it does not ship with every
+  // build. Point PLANOLAND_STUDIO_SOURCE at it (or at a local copy of
+  // public/images/studio/FounderPhoto_Website.png) before running.
+  const studioSource =
+    process.env.PLANOLAND_STUDIO_SOURCE ??
+    "C:/Users/Sinisa/Documents/MiniMaxAI Workfolder/archive/planoland-studio-source/FounderPhoto_Website.png";
 
-  // Resize only if wider than 2560, preserve aspect (16:9 frame kept).
-  const heroResized = heroMeta.width > 2560
-    ? sharp(heroData).resize({ width: 2560, withoutEnlargement: true })
-    : sharp(heroData);
-
-  await heroResized
-    .webp({ quality: QUALITY_HERO })
-    .toFile(heroOut);
-  const heroResult = await sharp(await readFile(heroOut)).metadata();
-  const heroSize = (await readFile(heroOut)).length;
-  console.log(`  output: ${heroResult.width}x${heroResult.height}, ${(heroSize / 1024).toFixed(0)} KB`);
-
-  // ---- Studio ----
-  const studioIn = "public/images/studio/ChatGPT Image Jul 20, 2026, 03_22_19 PM.png";
-  const studioOut = "public/images/studio/founders.webp";
-  console.log(`\nStudio: ${studioIn} -> ${studioOut}`);
-  const studioData = await readFile(studioIn);
-  const studioMeta = await sharp(studioData).metadata();
-  console.log(`  source: ${studioMeta.width}x${studioMeta.height}, ${(studioData.length / 1024 / 1024).toFixed(2)} MB`);
-
-  const studioResized = studioMeta.width > 1200
-    ? sharp(studioData).resize({ width: 1200, withoutEnlargement: true })
-    : sharp(studioData);
-
-  await studioResized
-    .webp({ quality: QUALITY_STUDIO })
-    .toFile(studioOut);
-  const studioResult = await sharp(await readFile(studioOut)).metadata();
-  const studioSize = (await readFile(studioOut)).length;
-  console.log(`  output: ${studioResult.width}x${studioResult.height}, ${(studioSize / 1024).toFixed(0)} KB`);
+  await convert({
+    in: studioSource,
+    out: "public/images/studio/founder-sinisa.webp",
+    maxWidth: 1200,
+    quality: QUALITY_STUDIO,
+  });
 
   console.log("\n✅ Done.");
 }
