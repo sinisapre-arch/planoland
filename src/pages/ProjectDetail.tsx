@@ -22,10 +22,12 @@ export default function ProjectDetail() {
   const description =
     project.description[contentLocale] ?? project.description.ru;
   const area = project.specs.area[contentLocale] ?? project.specs.area.ru;
+  const place = project.place[contentLocale] ?? project.place.ru;
   const next = getNextProject(project.slug);
 
   const specRows = [
     { label: t("project.spec.area"), value: area },
+    { label: t("project.spec.location"), value: place },
     { label: t("project.spec.year"), value: project.specs.year },
     {
       label: t("project.spec.status"),
@@ -50,7 +52,7 @@ export default function ProjectDetail() {
       <section className="relative h-[70vh] min-h-[460px] w-full overflow-hidden bg-graphite text-cream">
         <img
           src={project.image}
-          alt={title}
+          alt={`${title} — ${place}`}
           className="absolute inset-0 h-full w-full object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
@@ -105,7 +107,7 @@ export default function ProjectDetail() {
                 <div key={`${src}-${i}`} className="overflow-hidden bg-black">
                   <img
                     src={src}
-                    alt={`${title} — ${i + 1}`}
+                    alt={`${title} — ${place} — ${i + 1}`}
                     loading="lazy"
                     className="aspect-square w-full object-cover opacity-90 transition duration-700 hover:opacity-100"
                   />

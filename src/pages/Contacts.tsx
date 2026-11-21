@@ -94,6 +94,9 @@ export default function Contacts() {
               <p className="mt-3 text-sm uppercase leading-relaxed tracking-[0.1em] text-graphite/80">
                 {office.address}
               </p>
+              <p className="mt-3 text-sm uppercase leading-relaxed tracking-[0.1em] text-graphite/55">
+                {t("contacts.area")}
+              </p>
               <a
                 href={office.phoneHref}
                 className="mt-3 inline-flex border-b border-graphite pb-1 text-sm font-semibold uppercase tracking-[0.12em]"

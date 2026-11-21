@@ -8,7 +8,7 @@ export default function NotFound() {
   const lp = useLocalePath();
   return (
     <>
-      <Seo title={t("notfound.title")} />
+      <Seo title={t("notfound.title")} noindex />
       <section className="flex min-h-screen flex-col justify-center bg-cream px-4 pt-24 pb-20 text-graphite sm:px-6 lg:px-10">
         <div className="mx-auto max-w-[1760px]">
           <p className="font-expanded text-[26vw] font-black uppercase leading-[0.78] tracking-[-0.06em] text-graphite/15 sm:text-[18vw] lg:text-[14vw]">

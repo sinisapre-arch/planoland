@@ -1,26 +1,36 @@
 // Optimize gallery images from each project's P/ subfolder into WebP.
 // Center-crops every image to 1:1 square (matching the gallery's uniform grid).
 //
-// Source: public/images/Project Images/<Folder>/P/NN - name.png
+// Source: <raw-images>/<Folder>/P/NN - name.png
 // Output: public/images/projects/<slug>/gallery/NN.webp  (1200x1200)
+//
+// The raw originals are archived outside the repo so they don't bloat every
+// build. Point PLANOLAND_RAW_IMAGES at that folder (or at a local copy of
+// `public/images/Project Images/`) before running.
 //
 // Run with: node scripts/optimize-galleries.mjs
 import sharp from "sharp";
 import { readdir, stat, mkdir, rm } from "node:fs/promises";
 import { join } from "node:path";
 
-const SRC_ROOT = "public/images/Project Images";
+const SRC_ROOT =
+  process.env.PLANOLAND_RAW_IMAGES ??
+  "C:/Users/Sinisa/Documents/MiniMaxAI Workfolder/archive/planoland-raw-images";
 const OUT_ROOT = "public/images/projects";
 const SQUARE_SIZE = 1200; // 1:1 output dimension
 const QUALITY = 80;
 
-// Project folder name → output slug
+// Raw source folder name → output slug. The output folder is named after the
+// slug, so shipped asset paths carry no legacy codenames.
 const PROJECTS = [
   { folder: "DJURSHOLM", slug: "djursholm" },
   { folder: "Sollentuna", slug: "sollentuna" },
   { folder: "Gustavsberg", slug: "gustavsberg" },
   { folder: "Lidingo", slug: "lidingo" },
-  { folder: "Djur2", slug: "buxus" },
+  { folder: "Djur2", slug: "planting" },
+  { folder: "Stallar", slug: "summer-house-pool" },
+  { folder: "Terrasso", slug: "terrace-pool" },
+  { folder: "GARDEN", slug: "garden-earthworks" },
 ];
 
 async function pathExists(p) {

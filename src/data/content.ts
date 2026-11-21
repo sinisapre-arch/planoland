@@ -11,9 +11,14 @@ export const principles: LocalizedString[] = [
 ];
 
 /** Services (title + body pairs for the Services page). */
-export const services: { title: LocalizedString; body: LocalizedString }[] = [
+export const services: {
+  title: LocalizedString;
+  body: LocalizedString;
+  price?: LocalizedString;
+}[] = [
   {
     title: { ru: "Предпроектное обследование", en: "Pre-project survey" },
+    price: { ru: "от 22 000 ₽", en: "from ₽22,000" },
     body: {
       ru: "Выезжаем на участок, чтобы понять задачи и пожелания заказчика. Во время строительства дома рельеф часто меняется из-за выемки и подсыпки грунта, поэтому старые высотные отметки в исходных материалах могут уже не соответствовать фактическим. Перед проектированием заново измеряем существующие объекты и актуальные высоты GNSS-приёмником (GPS). Предоставленный заказчиком официальный кадастровый DWG используем как подложку границ; наши измерения не устанавливают и не подтверждают кадастровые границы.",
       en: "We visit the site to understand the client's needs and priorities. House construction often changes terrain through excavation and fill, so elevations in older source files may no longer match actual site levels. Before design, we remeasure existing features and current elevations with a GNSS receiver (GPS). The client's official cadastral DWG is used as a boundary reference; our measurements do not establish or certify cadastral boundaries.",
@@ -21,6 +26,10 @@ export const services: { title: LocalizedString; body: LocalizedString }[] = [
   },
   {
     title: { ru: "Концептуальный проект", en: "Concept design" },
+    price: {
+      ru: "Базовый проект 2D — от 5 000 ₽/сотка · минимум 50 000 ₽",
+      en: "Base 2D design — from ₽5,000/sotka · ₽50,000 minimum",
+    },
     body: {
       ru: "Сочетаем обмер участка GNSS-приёмником (GPS) с фотограмметрией, чтобы учесть рельеф, существующие объекты и особенности территории, а затем наглядно показать будущий результат в 3D. Для каждого клиента создаём персональную страницу проекта с чертежами, концептуальными решениями и визуализациями. Вы можете следить за ходом работы, знакомиться с решениями на каждом этапе и согласовывать проект до утверждения финального плана.",
       en: "We combine GNSS receiver (GPS) site measurement with photogrammetry to capture terrain, existing features and the character of the site, then present the proposed result in 3D. Each client gets a personal project page with drawings, design concepts and visualizations. You can follow progress, review decisions at every stage and approve the design before the final plan is signed off.",
@@ -28,6 +37,10 @@ export const services: { title: LocalizedString; body: LocalizedString }[] = [
   },
   {
     title: { ru: "Рабочая документация", en: "Detailed design" },
+    price: {
+      ru: "Рабочий проект — от 8 000 ₽/сотка · минимум 80 000 ₽",
+      en: "Detailed working design — from ₽8,000/sotka · ₽80,000 minimum",
+    },
     body: {
       ru: "Разбивочные чертежи, планы покрытий и посадочных зон, схема рулонного или посевного газона, подбор материалов, а также отдельные проекты освещения, полива и дренажа с высотными отметками и уклонами — состав документации согласуется для каждого проекта.",
       en: "Set-out drawings, paving and planting-area plans, a ready-laid or seeded lawn plan, material selections, and optional lighting, irrigation and drainage designs with levels and slopes. The drawing scope is agreed for each project.",
@@ -35,6 +48,7 @@ export const services: { title: LocalizedString; body: LocalizedString }[] = [
   },
   {
     title: { ru: "Авторский надзор", en: "Design supervision" },
+    price: { ru: "от 15 000 ₽ / выезд", en: "from ₽15,000 / visit" },
     body: {
       ru: "Остаёмся на объекте в ходе стройки, проверяем работы на соответствие утверждённому проекту и вносим правки по месту при необходимости.",
       en: "We stay on site through construction, checking the work against the approved design and adjusting details on the spot as needed.",
@@ -42,6 +56,10 @@ export const services: { title: LocalizedString; body: LocalizedString }[] = [
   },
   {
     title: { ru: "Реализация", en: "Implementation" },
+    price: {
+      ru: "Рассчитывается после осмотра участка",
+      en: "Quoted after the site review",
+    },
     body: {
       ru: "Полный цикл реализации ландшафтного проекта — от вертикальной планировки до посадки крупномеров. Собственные строительные бригады и авторский надзор руководителя компании обеспечивают точное воплощение решений на каждом этапе. Благодаря личному участию руководителя в проектировании и реализации замысел сохраняется в деталях — от чертежа до готового сада.",
       en: "We deliver the complete landscape project, from grading to planting mature trees. Our own construction teams and the company director's design supervision ensure that every decision is carried through accurately. With the director personally involved in both design and construction, the original vision is preserved in every detail, from drawing to finished garden.",
@@ -49,6 +67,10 @@ export const services: { title: LocalizedString; body: LocalizedString }[] = [
   },
   {
     title: { ru: "Уход", en: "Maintenance" },
+    price: {
+      ru: "Рассчитывается после брифа",
+      en: "Quoted after the brief",
+    },
     body: {
       ru: "Сезонный уход, чтобы сад прижился и жил десятилетиями.",
       en: "Seasonal care helps the garden establish itself and thrive for decades.",
@@ -95,7 +117,6 @@ export const designPackages: {
       { ru: "Вертикальная планировка сада с ключевыми проектными отметками и уклонами", en: "Garden grading plan with key design levels and slopes" },
       { ru: "Рабочие PDF/DWG-листы по согласованному составу", en: "Working PDF/DWG sheets in the agreed scope" },
       { ru: "Отдельно: дренаж и ливнёвка, освещение, автополив, GNSS-съёмка, расчёт материалов и 3D-визуализация", en: "Separate: drainage and stormwater, lighting, irrigation, GNSS survey, material takeoffs and 3D visualization" },
-      { ru: "Пакет DWG/PDF — в согласованном составе", en: "DWG/PDF deliverables as agreed" },
     ],
   },
   {
@@ -205,7 +226,6 @@ export const team: {
   name: LocalizedString;
   role: LocalizedString;
   bio: LocalizedString;
-  photo: string;
 }[] = [
   {
     name: { ru: "Синиша Предраговић", en: "Sinisa Predragović" },
@@ -217,7 +237,6 @@ export const team: {
       ru: "Синиша 15 лет проектировал и строил ландшафты в Швеции, прежде чем привезти это ремесло в Подмосковье и основать PlanoLand. Он участвует в каждом проекте от первого эскиза до последнего камня: сам проектирует и строит сад. Его страсть — создавать пространства на поколения, которые приносят красоту, тишину и радость тем, кто в них живёт.",
       en: "Sinisa spent 15 years designing and building landscapes in Sweden before bringing his craft to the Moscow region and co-founding PlanoLand. He takes part in every project from the first sketch to the last stone, designing and building the garden himself. His passion is creating spaces that last for generations and bring beauty, calm and joy to the people who live in them.",
     },
-    photo: "/images/studio/founders.webp",
   },
   {
     name: { ru: "Георгий Лыхно", en: "Georgy Lykhno" },
@@ -229,7 +248,6 @@ export const team: {
       ru: "Георгий — основатель компании «Планодом», которая строит каркасные и каменные дома в Подмосковье и по всей России. В PlanoLand он ведёт клиентскую сторону каждого проекта — от первого контакта до сдачи, чтобы заказчики получали в саду ту же надёжность полного цикла, что и клиенты «Планодома» при строительстве дома.",
       en: "Georgy is the founder of Planodom, which builds timber-frame and stone houses across the Moscow region and throughout Russia. At PlanoLand, he leads the client side of every project from first contact to handover, giving garden clients the same full-cycle reliability that Planodom's homebuilding clients receive.",
     },
-    photo: "/images/studio/founders.webp",
   },
 ];
 
@@ -252,7 +270,7 @@ export const blogPosts: {
       en: "How Swedish landscape technique adapts to a harsher, snowier climate.",
     },
     date: "2026-03-14",
-    image: "https://ext.same-assets.com/3686561945/3311752931.webp",
+    image: "/images/blog/scandinavian-design-russian-winters.webp",
   },
   {
     slug: "what-photogrammetry-does-for-your-garden",
@@ -265,7 +283,7 @@ export const blogPosts: {
       en: "A plain-English explanation of the survey/3D process every client goes through.",
     },
     date: "2026-02-02",
-    image: "https://ext.same-assets.com/3686561945/3484833766.webp",
+    image: "/images/blog/what-photogrammetry-does-for-your-garden.webp",
   },
   {
     slug: "you-dont-have-to-build-it-all-in-one-summer",
@@ -278,6 +296,6 @@ export const blogPosts: {
       en: "How phased, season-by-season construction makes a bigger garden affordable.",
     },
     date: "2026-01-20",
-    image: "https://ext.same-assets.com/3686561945/2915188378.webp",
+    image: "/images/blog/you-dont-have-to-build-it-all-in-one-summer.webp",
   },
 ];

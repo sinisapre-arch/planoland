@@ -26,7 +26,11 @@ export default function ScandinavianGarden() {
       <section className="relative h-[60vh] min-h-[420px] w-full overflow-hidden bg-graphite">
         <img
           src={assets.bg3}
-          alt={t("nav.scandinavian")}
+          alt={
+            contentLocale === "en"
+              ? "Scandinavian garden with natural planting, stone paths and a timber terrace"
+              : "Скандинавский сад: натуральные посадки, каменные дорожки и деревянная терраса"
+          }
           className="absolute inset-0 h-full w-full object-cover opacity-90"
         />
       </section>

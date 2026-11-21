@@ -5,6 +5,8 @@ import { metrikaHit } from "../lib/metrika";
 type Props = {
   title: string;
   description?: string;
+  /** Set on the 404 page so search engines do not index a soft-404 URL. */
+  noindex?: boolean;
 };
 
 const SITE_NAME = "PlanoLand";
@@ -29,7 +31,7 @@ function upsertHead(
  * alternates (no extra deps). Russian is the default locale; English lives
  * under /en/. Missing descriptions fall back to the static index.html tags.
  */
-export default function Seo({ title, description }: Props) {
+export default function Seo({ title, description, noindex }: Props) {
   const location = useLocation();
   // ym init in index.html already records the first page view; every
   // subsequent route change needs a manual hit (SPA).
@@ -39,6 +41,16 @@ export default function Seo({ title, description }: Props) {
     document.title = title.includes(SITE_NAME)
       ? title
       : `${title} — ${SITE_NAME}`;
+
+    upsertHead(
+      'meta[name="robots"]',
+      () => {
+        const meta = document.createElement("meta");
+        meta.setAttribute("name", "robots");
+        return meta;
+      },
+      (el) => el.setAttribute("content", noindex ? "noindex, follow" : "index, follow"),
+    );
 
     if (skipFirstHit.current) {
       skipFirstHit.current = false;
@@ -125,7 +137,7 @@ export default function Seo({ title, description }: Props) {
       },
       (el) => el.setAttribute("content", canonical),
     );
-  }, [title, description, location.pathname]);
+  }, [title, description, location.pathname, noindex]);
 
   return null;
 }

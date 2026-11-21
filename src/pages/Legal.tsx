@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import Seo from "../components/Seo";
 import { useLang } from "../i18n/LangContext";
@@ -79,24 +79,21 @@ const docs: LegalDoc[] = [
   },
 ];
 
-/** Map legal-page slugs to their documents. */
-function resolveKey(
-  slug: string | undefined,
-  pathname: string,
-): LegalDoc["key"] {
+/** Map legal-page paths to their documents. */
+function resolveKey(pathname: string): LegalDoc["key"] {
   if (pathname.endsWith("/policy-yandex")) return "policy-yandex";
   if (pathname.endsWith("/documents")) return "documents";
+  if (pathname.endsWith("/policy")) return "policy";
   return "agree";
 }
 
 export default function Legal() {
-  const { slug } = useParams();
   const { pathname } = useLocation();
   const t = useT();
   const { contentLocale } = useLang();
   const lang = contentLocale;
 
-  const key = resolveKey(slug, pathname);
+  const key = resolveKey(pathname);
   const doc = docs.find((d) => d.key === key) ?? docs[0];
   const paragraphs = doc.body[lang];
 

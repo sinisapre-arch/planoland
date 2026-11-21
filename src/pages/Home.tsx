@@ -189,7 +189,7 @@ function Studio() {
         <div className="relative min-h-[520px] overflow-hidden lg:min-h-[760px]">
           <img
             src={assets.studio}
-            alt="Siniša Predragović and Georgiy A. Lykhno"
+            alt={t("studio.alt")}
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent p-6 text-cream">
@@ -273,8 +273,7 @@ function Principles() {
 function PortfolioPreview() {
   const t = useT();
   const lp = useLocalePath();
-  // First 12 projects on the home grid.
-  const preview = projects.slice(0, 12);
+  const preview = projects;
   return (
     <section
       id="portfolio"
@@ -386,8 +385,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="PlanoLand — Ландшафтная студия полного цикла"
-        description={t("hero.lede")}
+        title={t("home.seoTitle")}
+        description={t("home.seoDescription")}
       />
       <Hero />
       <FeaturedProjects />

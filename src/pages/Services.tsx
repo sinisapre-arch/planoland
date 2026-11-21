@@ -11,7 +11,10 @@ export default function Services() {
   const { contentLocale } = useLang();
   const localePath = useLocalePath();
   const isRu = contentLocale === "ru";
+  // Ordered by the actual project workflow: survey -> design -> quantities ->
+  // construction -> care. The numbering on this page follows this order.
   const serviceGroups = [
+    { title: isRu ? "ОБМЕР УЧАСТКА" : "SITE MEASUREMENT", items: [services[0]] },
     { title: isRu ? "ПРОЕКТИРОВАНИЕ" : "DESIGN", items: [services[1], services[2]] },
     {
       title: isRu ? "РАСЧЁТ ОБЪЁМОВ И СМЕТЫ" : "QUANTITIES & COST ESTIMATES",
@@ -23,7 +26,6 @@ export default function Services() {
         },
       }],
     },
-    { title: isRu ? "ОБМЕР УЧАСТКА" : "SITE MEASUREMENT", items: [services[0]] },
     { title: isRu ? "СТРОИТЕЛЬСТВО И СОПРОВОЖДЕНИЕ" : "CONSTRUCTION & SUPERVISION", items: [services[4], services[3]] },
     { title: isRu ? "УХОД ЗА САДОМ" : "GARDEN MAINTENANCE", items: [services[5]] },
   ];
@@ -97,6 +99,11 @@ export default function Services() {
                   {group.items.map((service) => (
                     <div key={service.title.ru}>
                       <h4 className="font-bold uppercase tracking-wide">{service.title[contentLocale] ?? service.title.ru}</h4>
+                      {service.price && (
+                        <p className="mt-1 text-sm font-semibold text-graphite/70">
+                          {service.price[contentLocale] ?? service.price.ru}
+                        </p>
+                      )}
                       <p className="mt-2 text-sm leading-relaxed text-graphite/75">{service.body[contentLocale] ?? service.body.ru}</p>
                     </div>
                   ))}

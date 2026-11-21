@@ -11,8 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+tsconfig.tsbuildinfo
 
-# Raw source images — drop originals here, optimized WebPs live in projects/<slug>/
+# Raw source images — originals live outside the repo now (see README).
+# If you need to re-run the gallery optimizer, drop them here first.
 public/images/Project Images/
 
 # Editor directories and files

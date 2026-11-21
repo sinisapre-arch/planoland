@@ -1,6 +1,9 @@
 /**
  * Project records. Slugs are descriptive English keywords; old codenames
  * (buxus, terrasso, hacienda, sad) redirect to the new slugs in vercel.json.
+ *
+ * Image folders under public/images/projects/ are named after the slug, so the
+ * shipped asset paths carry no legacy codenames.
  */
 export type ProjectCategory = "private";
 
@@ -168,7 +171,7 @@ export const projects: Project[] = [
       en: "Djursholm, Sweden",
     },
     category: "private",
-    image: "/images/projects/buxus/cover.webp",
+    image: "/images/projects/planting/cover.webp",
     specs: {
       area: { ru: "2000 м²", en: "2,000 m²" },
       year: "2022",
@@ -176,14 +179,14 @@ export const projects: Project[] = [
       status: "realized",
     },
     description: {
-      ru: "Ландшафтный проект загородного дома в Швеции. Разработали комплексную концепцию участка, объединив озеленение, подъездные дорожки и зону бассейна в единую композицию. Планировка подчёркивает выразительную архитектуру каменного дома, а продуманное сочетание мощения и растений создаёт гармоничное пространство для отдыха и жизни на природе.",
-      en: "Landscape design for a country home in Sweden. The comprehensive site concept brings together planting, access paths and the pool area. The layout highlights the distinctive architecture of the stone house, while the thoughtful combination of paving and plants creates a harmonious place to relax and enjoy life outdoors.",
+      ru: "Ландшафтный проект загородного дома в Швеции. Разработали комплексную концепцию участка, объединив озеленение, подъездные дорожки и террасу под навесом в единую композицию. Планировка подчёркивает выразительную архитектуру деревянного дома с черепичной крышей, а продуманное сочетание мощения и растений — стриженой живой изгороди, олив в кашпо и газона — создаёт гармоничное пространство для отдыха и жизни на природе.",
+      en: "Landscape design for a country home in Sweden. We developed a full site concept that brings planting, access paths and a sheltered terrace together in a single composition. The layout responds to the distinctive architecture of the timber house with a tiled roof, while the combination of paving and planting — clipped hedges, potted olives and lawn — creates a harmonious place to relax and enjoy life outdoors.",
     },
     gallery: [
-      "/images/projects/buxus/gallery/01.webp",
-      "/images/projects/buxus/gallery/02.webp",
-      "/images/projects/buxus/gallery/03.webp",
-      "/images/projects/buxus/gallery/04.webp",
+      "/images/projects/planting/gallery/01.webp",
+      "/images/projects/planting/gallery/02.webp",
+      "/images/projects/planting/gallery/03.webp",
+      "/images/projects/planting/gallery/04.webp",
     ],
     featured: true,
   },
@@ -191,15 +194,15 @@ export const projects: Project[] = [
     slug: "summer-house-pool",
     title: { ru: "Летний загородный дом с бассейном", en: "Summer country home with a pool" },
     place: {
-      ru: "Медное озеро, Ленинградская область",
-      en: "Mednoye lake, Leningrad region",
+      ru: "Швеция",
+      en: "Sweden",
     },
     category: "private",
-    image: "/images/projects/hacienda/cover.webp",
+    image: "/images/projects/summer-house-pool/cover.webp",
     specs: {
       area: { ru: "1500 м²", en: "1,500 m²" },
       year: "2023",
-      location: { ru: "Медное озеро", en: "Mednoye lake" },
+      location: { ru: "Швеция", en: "Sweden" },
       status: "realized",
     },
     description: {
@@ -207,9 +210,9 @@ export const projects: Project[] = [
       en: "Landscape design for a country home made for summer getaways. Light paving brings the house, pool and leisure areas together in a harmonious space. Clean path lines and paved terraces sit naturally among the planting, creating a light, welcoming and comfortable setting for summer days in the country.",
     },
     gallery: [
-      "/images/projects/hacienda/gallery/01.webp",
-      "/images/projects/hacienda/gallery/02.webp",
-      "/images/projects/hacienda/gallery/03.webp",
+      "/images/projects/summer-house-pool/gallery/01.webp",
+      "/images/projects/summer-house-pool/gallery/02.webp",
+      "/images/projects/summer-house-pool/gallery/03.webp",
     ],
     featured: true,
   },
@@ -221,7 +224,7 @@ export const projects: Project[] = [
       en: "Stockholm, Sweden",
     },
     category: "private",
-    image: "/images/projects/terrasso/cover.webp",
+    image: "/images/projects/terrace-pool/cover.webp",
     specs: {
       area: { ru: "900 м²", en: "900 m²" },
       year: "2021",
@@ -233,25 +236,25 @@ export const projects: Project[] = [
       en: "Landscape design for a country home with a pool and open terrace. A gravel path links the main areas, creating a natural transition between the house, garden and waterside lounge. Thoughtful planning and harmonious planting make a unified space for comfortable outdoor living.",
     },
     gallery: [
-      "/images/projects/terrasso/gallery/01.webp",
-      "/images/projects/terrasso/gallery/02.webp",
-      "/images/projects/terrasso/gallery/03.webp",
-      "/images/projects/terrasso/gallery/04.webp",
-      "/images/projects/terrasso/gallery/05.webp",
-      "/images/projects/terrasso/gallery/06.webp",
-      "/images/projects/terrasso/gallery/07.webp",
+      "/images/projects/terrace-pool/gallery/01.webp",
+      "/images/projects/terrace-pool/gallery/02.webp",
+      "/images/projects/terrace-pool/gallery/03.webp",
+      "/images/projects/terrace-pool/gallery/04.webp",
+      "/images/projects/terrace-pool/gallery/05.webp",
+      "/images/projects/terrace-pool/gallery/06.webp",
+      "/images/projects/terrace-pool/gallery/07.webp",
     ],
     featured: true,
   },
   {
-    slug: "japanese-garden",
+    slug: "garden-earthworks",
     title: { ru: "Земляные работы и проектирование", en: "Earthworks and garden design" },
     place: {
       ru: "Стокгольм, Швеция",
       en: "Stockholm, Sweden",
     },
     category: "private",
-    image: "/images/projects/garden/cover.webp",
+    image: "/images/projects/garden-earthworks/cover.webp",
     specs: {
       area: { ru: "1000 м²", en: "1,000 m²" },
       year: "2020",
@@ -259,21 +262,21 @@ export const projects: Project[] = [
       status: "realized",
     },
     description: {
-      ru: "Ландшафтный проект с элементами японского сада, беседкой и многоуровневой планировкой. Мощение объединяет функциональные зоны участка, а подпорные стены органично вписаны в композицию и помогают обыграть перепад высот. Японский сад создаёт атмосферу уединения и спокойствия, а беседка становится уютным местом для отдыха.",
-      en: "A landscape design with Japanese garden elements, a gazebo and a multi-level layout. Paving connects the functional areas, while retaining walls fit naturally into the composition and make use of the change in level. The Japanese garden creates a sense of privacy and calm, and the gazebo offers a welcoming place to relax.",
+      ru: "Ландшафтный проект с многоуровневой планировкой. Гранитная терраса и булыжные дорожки объединяют функциональные зоны участка, а подпорные стены органично вписаны в композицию и помогают обыграть перепад высот. Оранжерея на каменном основании, каменный колодец и водоём из гранитных валунов создают уединённый уголок сада, а стриженые живые изгороди отделяют участок от улицы.",
+      en: "A landscape design with a multi-level layout. A granite terrace and cobbled paths connect the functional areas of the site, while retaining walls fit naturally into the composition and make use of the change in level. A greenhouse on a stone base, a stone well and a pond edged with granite boulders create a secluded corner of the garden, while clipped hedges separate the property from the street.",
     },
     gallery: [
-      "/images/projects/garden/gallery/01.webp",
-      "/images/projects/garden/gallery/02.webp",
-      "/images/projects/garden/gallery/03.webp",
-      "/images/projects/garden/gallery/04.webp",
-      "/images/projects/garden/gallery/05.webp",
-      "/images/projects/garden/gallery/06.webp",
-      "/images/projects/garden/gallery/07.webp",
-      "/images/projects/garden/gallery/08.webp",
-      "/images/projects/garden/gallery/09.webp",
-      "/images/projects/garden/gallery/10.webp",
-      "/images/projects/garden/gallery/11.webp",
+      "/images/projects/garden-earthworks/gallery/01.webp",
+      "/images/projects/garden-earthworks/gallery/02.webp",
+      "/images/projects/garden-earthworks/gallery/03.webp",
+      "/images/projects/garden-earthworks/gallery/04.webp",
+      "/images/projects/garden-earthworks/gallery/05.webp",
+      "/images/projects/garden-earthworks/gallery/06.webp",
+      "/images/projects/garden-earthworks/gallery/07.webp",
+      "/images/projects/garden-earthworks/gallery/08.webp",
+      "/images/projects/garden-earthworks/gallery/09.webp",
+      "/images/projects/garden-earthworks/gallery/10.webp",
+      "/images/projects/garden-earthworks/gallery/11.webp",
     ],
     featured: true,
   },

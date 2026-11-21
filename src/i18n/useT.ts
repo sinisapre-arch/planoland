@@ -28,8 +28,8 @@ export const strings = {
     en: "From the first sketch to the last stone",
   },
   "hero.lede": {
-    ru: "Мы спроектируем и построим вам сад с нуля. 15 лет опыта в Европе и России.",
-    en: "We design and build your garden from scratch. 15 years of experience in Europe and Russia.",
+    ru: "Мы спроектируем и построим вам сад с нуля. 15 лет опыта в Швеции — работаем в Подмосковье.",
+    en: "We design and build your garden from scratch. 15 years of experience in Sweden — now working in the Moscow region.",
   },
   "hero.stat1.value": { ru: "15 лет", en: "15 years" },
   "hero.stat1.label": { ru: "в дизайне и строительстве", en: "in design and construction" },
@@ -39,6 +39,16 @@ export const strings = {
   "hero.stat3.label": {
     ru: "авторский надзор и личное присутствие дизайнера на объекте",
     en: "design supervision and the designer's personal presence on site",
+  },
+
+  // ---- Home page metadata (must match index.html) ----
+  "home.seoTitle": {
+    ru: "PlanoLand — ландшафтная студия полного цикла в Подмосковье",
+    en: "PlanoLand — full-cycle landscape studio in the Moscow region",
+  },
+  "home.seoDescription": {
+    ru: "Проектируем и строим скандинавские сады под ключ в Подмосковье: 15 лет опыта, 300+ реализованных садов, собственные бригады и авторский надзор дизайнера на объекте. Запишитесь на консультацию.",
+    en: "We design and build Scandinavian gardens across the Moscow region: 15 years of experience, 300+ completed gardens, in-house crews and the designer's personal supervision on site. Book a consultation.",
   },
 
   // ---- Featured projects ----
@@ -58,6 +68,10 @@ export const strings = {
   "studio.caption": {
     ru: "Синиша Предраговић и Лыхно Георгий Александрович — основатели PlanoLand",
     en: "Siniša Predragović and Georgiy A. Lykhno — founders of PlanoLand",
+  },
+  "studio.alt": {
+    ru: "Синиша Предраговић и Георгий Лыхно — основатели студии PlanoLand",
+    en: "Sinisa Predragović and Georgy Lykhno, founders of PlanoLand",
   },
   "studio.body1": {
     ru: "Сад — это способ быть здесь и сейчас. Пространство, которое меняет образ мыслей и жизни, где человек чувствует опору, связь с собой и миром.",
@@ -151,6 +165,10 @@ export const strings = {
     ru: "Москва, ул. Зорге, д. 9А",
     en: "Zorge street 9A, Moscow",
   },
+  "footer.area": {
+    ru: "Москва и Московская область",
+    en: "Moscow and the Moscow region",
+  },
   "footer.rights": {
     ru: "2026. Материалы сайта могут быть использованы только с разрешения PlanoLand.",
     en: "2026. Site materials may be used only with permission of PlanoLand.",
@@ -180,6 +198,7 @@ export const strings = {
     en: "All projects",
   },
   "project.spec.area": { ru: "Площадь", en: "Area" },
+  "project.spec.location": { ru: "Локация", en: "Location" },
   "project.spec.year": { ru: "Год", en: "Year" },
   "project.spec.status": { ru: "Статус", en: "Status" },
   "project.spec.status.realized": { ru: "Реализован", en: "Realized" },
@@ -213,8 +232,8 @@ export const strings = {
     en: "The people who make gardens",
   },
   "team.lede": {
-    ru: "Синиша Предраговић — дизайнер и строитель с 15-летним опытом в Европе и России. Георгий Лыхно — основатель компании «Планодом», строит дома под ключ по всей России. Вместе — полный цикл: дом и сад.",
-    en: "Sinisa Predragović is a designer and builder with 15 years of experience in Europe and Russia. Georgy Lykhno is the founder of Planodom, building turnkey homes across Russia. Together, they offer a complete cycle: house and garden.",
+    ru: "Синиша Предраговић — дизайнер и строитель с 15-летним опытом в Швеции, работающий в Подмосковье. Георгий Лыхно — основатель компании «Планодом», строит дома под ключ в Подмосковье и по всей России. Вместе — полный цикл: дом и сад.",
+    en: "Sinisa Predragović is a designer and builder with 15 years of experience in Sweden, now working in the Moscow region. Georgy Lykhno is the founder of Planodom, building turnkey homes in the Moscow region and across Russia. Together, they offer a complete cycle: house and garden.",
   },
 
   // ---- Contacts ----
@@ -227,7 +246,20 @@ export const strings = {
     ru: "Оставьте заявку — менеджер свяжется в течение рабочего дня и предложит время для первой встречи.",
     en: "Leave a request — the manager will contact you within a business day and propose a time for the first meeting.",
   },
-  "contacts.msk": { ru: "Офис в Подмосковье", en: "Moscow region office" },
+  "contacts.msk": { ru: "Офис", en: "Office" },
+  "contacts.area": {
+    ru: "Работаем по Москве и Московской области",
+    en: "We work across Moscow and the Moscow region",
+  },
+
+  // ---- Social profile names (used as accessible labels) ----
+  "social.youtube": { ru: "YouTube", en: "YouTube" },
+  "social.vkVideo": { ru: "VK Видео", en: "VK Video" },
+  "social.vk": { ru: "VK", en: "VK" },
+  "social.telegram": { ru: "Telegram", en: "Telegram" },
+  "social.instagram": { ru: "Instagram", en: "Instagram" },
+  "social.dzen": { ru: "Дзен", en: "Dzen" },
+  "social.pinterest": { ru: "Pinterest", en: "Pinterest" },
 
   // ---- Blog ----
   "blog.eyebrow": { ru: "Журнал", en: "Journal" },

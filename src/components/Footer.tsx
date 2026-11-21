@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { assets, contactInfo } from "../data/assets";
 import { useLocalePath } from "../i18n/routes";
-import { useT } from "../i18n/useT";
+import { type StringKey, useT } from "../i18n/useT";
 import Wordmark from "./Wordmark";
 
 export default function Footer() {
@@ -24,6 +24,9 @@ export default function Footer() {
           <address className="not-italic text-sm uppercase leading-relaxed tracking-[0.1em] text-graphite/75">
             {t("footer.msk")}
           </address>
+          <p className="mt-2 text-[10px] uppercase leading-relaxed tracking-[0.16em] text-graphite/50">
+            {t("footer.area")}
+          </p>
         </div>
         <div className="flex flex-col justify-between gap-8">
           <div className="flex flex-wrap gap-3">
@@ -32,7 +35,7 @@ export default function Footer() {
                 key={name}
                 href="#social"
                 className="grid h-10 w-10 place-items-center border border-graphite/25 transition hover:bg-graphite hover:invert"
-                aria-label={name}
+                aria-label={t(`social.${name}` as StringKey)}
               >
                 <img src={src} alt="" className="h-5 w-5" />
               </a>

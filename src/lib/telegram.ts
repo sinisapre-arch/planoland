@@ -1,10 +1,19 @@
 /**
  * Telegram contact-form submission.
  *
- * Mirrors the pattern from the reference portfolio project: the client POSTs
- * a small JSON payload to a Cloudflare Worker, which holds the bot token +
- * chat ID server-side and calls the Telegram sendMessage API. This keeps all
- * secrets off the client.
+ * The client POSTs a small JSON payload to a Cloudflare Worker, which holds
+ * the bot token + chat ID server-side and calls the Telegram sendMessage API.
+ * This keeps all secrets off the client.
+ *
+ * Worker source lives in `worker/` (same repo). Override the endpoint with
+ * VITE_TELEGRAM_WORKER_URL if the worker is hosted elsewhere.
+ *
+ * TEMPORARY (owner decision 2026-11-21): the dedicated `planoland-bot` worker
+ * is written but not deployed — it still needs a bot token + chat id from the
+ * owner. Until it is live the form posts to the legacy shared worker so
+ * leads keep arriving. Swap this default back to
+ * "https://planoland-bot.sinisapre.workers.dev" (and drop the legacy hostname
+ * from this file) as soon as that worker is deployed.
  *
  * Worker contract (must match the deployed worker):
  *   POST {workerUrl}
@@ -15,6 +24,7 @@
  */
 
 export const TELEGRAM_WORKER_URL =
+  import.meta.env.VITE_TELEGRAM_WORKER_URL ??
   "https://mscw-bureau-bot.sinisapre.workers.dev";
 
 export type ProjectType =

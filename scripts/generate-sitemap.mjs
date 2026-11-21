@@ -17,7 +17,7 @@ const projectSlugs = [
   "planting",
   "summer-house-pool",
   "terrace-pool",
-  "japanese-garden",
+  "garden-earthworks",
 ];
 
 // path (no locale prefix) -> priority
