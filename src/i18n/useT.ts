@@ -70,7 +70,7 @@ export const strings = {
     en: "Sinisa Predragović — founder, designer and builder of PlanoLand",
   },
   "studio.alt": {
-    ru: "Синиша Предрагович за работой на объекте — основатель и дизайнер студии PlanoLand",
+    ru: "Синиша Предраговић за работой на объекте — основатель и дизайнер студии PlanoLand",
     en: "Sinisa Predragović at work on a site — founder and designer of PlanoLand",
   },
   "studio.body1": {
@@ -226,14 +226,19 @@ export const strings = {
     },
 
   // ---- Team ----
-  "team.eyebrow": { ru: "Команда PlanoLand", en: "The PlanoLand team" },
+  "team.eyebrow": { ru: "Основатель студии", en: "The studio's founder" },
   "team.title": {
-    ru: "Люди, которые создают сады",
-    en: "The people who make gardens",
+    ru: "Человек, который создаёт сады",
+    en: "The person who makes gardens",
   },
   "team.lede": {
-    ru: "Синиша Предраговић — дизайнер и строитель с 15-летним опытом в Швеции, работающий в Подмосковье. Георгий Лыхно — основатель компании «Планодом», строит дома под ключ в Подмосковье и по всей России. Вместе — полный цикл: дом и сад.",
-    en: "Sinisa Predragović is a designer and builder with 15 years of experience in Sweden, now working in the Moscow region. Georgy Lykhno is the founder of Planodom, building turnkey homes in the Moscow region and across Russia. Together, they offer a complete cycle: house and garden.",
+    ru: "Синиша Предраговић проектирует и строит сады сам — от первого эскиза до последнего камня. 15 лет опыта в Швеции, теперь он работает в Подмосковье и ведёт каждый проект лично.",
+    en: "Sinisa Predragović designs and builds the gardens himself — from the first sketch to the last stone. Fifteen years of experience in Sweden, now working in the Moscow region and leading every project personally.",
+  },
+  "team.studioNoteTitle": { ru: "Студия", en: "The studio" },
+  "team.studioNote": {
+    ru: "PlanoLand — небольшая студия: Синиша ведёт проекты сам, а работы выполняют собственные бригады. Заказчик получает одного ответственного за весь цикл — от обследования участка и проекта до строительства и ухода за садом.",
+    en: "PlanoLand is a small studio: Sinisa runs the projects himself and the work is carried out by his own crews. The client gets one person responsible for the whole cycle — from the site survey and the design to construction and ongoing care.",
   },
 
   // ---- Contacts ----

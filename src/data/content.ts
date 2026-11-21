@@ -230,23 +230,12 @@ export const team: {
   {
     name: { ru: "Синиша Предраговић", en: "Sinisa Predragović" },
     role: {
-      ru: "Сооснователь PlanoLand, дизайнер и строитель",
-      en: "PlanoLand co-founder, designer and builder",
+      ru: "Основатель PlanoLand, дизайнер и строитель",
+      en: "Founder of PlanoLand, designer and builder",
     },
     bio: {
       ru: "Синиша 15 лет проектировал и строил ландшафты в Швеции, прежде чем привезти это ремесло в Подмосковье и основать PlanoLand. Он участвует в каждом проекте от первого эскиза до последнего камня: сам проектирует и строит сад. Его страсть — создавать пространства на поколения, которые приносят красоту, тишину и радость тем, кто в них живёт.",
-      en: "Sinisa spent 15 years designing and building landscapes in Sweden before bringing his craft to the Moscow region and co-founding PlanoLand. He takes part in every project from the first sketch to the last stone, designing and building the garden himself. His passion is creating spaces that last for generations and bring beauty, calm and joy to the people who live in them.",
-    },
-  },
-  {
-    name: { ru: "Георгий Лыхно", en: "Georgy Lykhno" },
-    role: {
-      ru: "Сооснователь, работа с клиентами",
-      en: "Co-founder, client relations",
-    },
-    bio: {
-      ru: "Георгий — основатель компании «Планодом», которая строит каркасные и каменные дома в Подмосковье и по всей России. В PlanoLand он ведёт клиентскую сторону каждого проекта — от первого контакта до сдачи, чтобы заказчики получали в саду ту же надёжность полного цикла, что и клиенты «Планодома» при строительстве дома.",
-      en: "Georgy is the founder of Planodom, which builds timber-frame and stone houses across the Moscow region and throughout Russia. At PlanoLand, he leads the client side of every project from first contact to handover, giving garden clients the same full-cycle reliability that Planodom's homebuilding clients receive.",
+      en: "Sinisa spent 15 years designing and building landscapes in Sweden before bringing his craft to the Moscow region and founding PlanoLand. He takes part in every project from the first sketch to the last stone, designing and building the garden himself. His passion is creating spaces that last for generations and bring beauty, calm and joy to the people who live in them.",
     },
   },
 ];
